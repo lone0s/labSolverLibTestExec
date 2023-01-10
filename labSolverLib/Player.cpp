@@ -121,5 +121,5 @@ void Player::doAction(Action action) { // Effectue une action
 		break;
 	}
 
-	tracer.add(std::make_tuple(x, y));
+	tracer.add(std::make_tuple(x, y)); // On ajoute la position du joueur à la liste des positions visitées
 }

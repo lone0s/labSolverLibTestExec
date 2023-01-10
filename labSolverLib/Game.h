@@ -17,6 +17,7 @@ class Game
 {
     Grid grid;
     size_t cpt;
+        
 public:
 
     /**

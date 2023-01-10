@@ -3,8 +3,9 @@
 #include <filesystem>
 #include "Game.h"
 
-int mainCLI()
+int mainCLI(int argc, char* argv[])
 {
+	
 	std::string testFilesPath = "../labyz/";
 	std::string fileName;
 
@@ -151,7 +152,7 @@ int mainCLI()
 }
 
 
-int main() {
-	
+int main(int argc, char* argv[]) {
+
 	mainCLI();
 }
