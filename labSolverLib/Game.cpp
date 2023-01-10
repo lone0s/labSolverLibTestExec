@@ -25,7 +25,7 @@ void Game::play(Heuristic& heuristic, bool displayed) {
 
 
 		if (cpt > 1000) { // Si le compteur dépasse 1000, on demande à l'utilisateur s'il veut continuer
-			std::cout << "Vous semblez être bloqué dans une boucle, voulez vous continuer ? (y/n)" << std::endl;
+			std::cout << "Vous semblez etre bloque dans une boucle, voulez vous continuer ? (y/n)" << std::endl;
 			char c;
 			std::cin >> c;
 			if (c == 'n')
@@ -44,9 +44,9 @@ void Game::play(Heuristic& heuristic, bool displayed) {
 
 		std::cout << "\nLe joueur a atteint la sortie! " << std::endl;
 
-		std::cout << "Nombre de déplacements : " << (size_t)grid.getPlayer() << std::endl;
+		std::cout << "Nombre de deplacements : " << (size_t)grid.getPlayer() << std::endl;
 
-		std::cout << "\n Chemin emprunté : " << std::endl;
+		std::cout << "\n Chemin emprunte : " << std::endl;
 		grid.displayPath(); // Affichage du chemin emprunté
 
 	}

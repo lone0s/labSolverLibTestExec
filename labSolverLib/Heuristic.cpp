@@ -91,7 +91,7 @@ std::vector<Action> chooseAll::getNextAction(Grid& grid)
 {
 	std::vector<Action> nextActions;
 
-	std::cout << "Utilisez les flêches du clavier pour vous déplacer" << std::endl;
+	std::cout << "Utilisez les fleches du clavier pour vous deplacer" << std::endl;
 
 	Action choice = Action::INVALID;
 	while (choice == Action::INVALID) {

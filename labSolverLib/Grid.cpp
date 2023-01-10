@@ -12,7 +12,7 @@ Grid::Grid(const std::string& file, char wallChar, char emptyChar) : wallChar(wa
 		std::vector<Cells> row;
 
 		while (std::getline(infile, line)) {
-			// permet de scale le fichier de données pour passer de la représentation rectangulaire à la représentation carrée
+			// permet de mettre à niveau le fichier de données pour passer de la représentation rectangulaire à la représentation carrée
 			// pour n'avoir que des couloirs d'un caractère de largeur
 			int cpt = 1;
 			for (int i = 0; i < line.length(); i++) {
@@ -45,7 +45,7 @@ Grid::Grid(const std::string& file, char wallChar, char emptyChar) : wallChar(wa
 		labyrinth[0][2] = Cells::WALL;
 		labyrinth[1][0] = Cells::WALL;
 	}
-	else { // si le fichier n'est pas ouvert, on lève une exception
+	else { // si le fichier n'est pas ouvert, on lève une exception qui sera catch par le main
 		throw std::exception();
 	}
 
